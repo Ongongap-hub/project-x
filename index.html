@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    
+  <div class="container">
+    <h1>My Mood Tracker </h1>
+    <p>How are you feeling today?</p>
+
+    <div class="moods">
+      <button class="mood" data-mood="Happy">
+        <span>Happy</span>
+      </button>
+      <button class="mood" data-mood="Calm">
+        <span>Calm</span>
+      </button>
+      <button class="mood" data-mood="Okay">
+        <span>Okay</span>
+      </button>
+      <button class="mood" data-mood="Sad">
+        <span>Sad</span>
+      </button>
+      <button class="mood" data-mood="Angry">
+        <span>Angry</span>
+      </button>
+    </div>
+
+    <label for="note">Write about your day:</label>
+    <textarea id="note" placeholder="What happened today?"></textarea>
+
+    <button id="saveBtn">Save My Mood</button>
+
+    <p id="message" role="status"></p>
+
+    <h2>Mood History </h2>
+    <div id="history"></div>
+  </div>
+
+ <script src="script.js"></script>
+</body>
+</html>
